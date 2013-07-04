@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>Keep it Simple Sily</title>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/simplesilly.js"></script>
+</head>
+<body>
+	<button id="silly">Do It </button>
+	<button id="clear">Clear</button>
+	<div id="result"></div>
+	
+	<script>
+		$('#silly').click(function() {
+			SIMPLESILLY.DOIT($('#result'));
+		});
+		$('#clear').click(function(){
+			$('#result').html('');
+		});
+	
+</body>
+</html>
+
